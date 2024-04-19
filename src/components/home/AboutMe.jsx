@@ -39,7 +39,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
         <div className="col-5 d-none d-lg-block align-self-center">
           {showPic && (
             <img
-              className="border border-secondary rounded-circle"
+              className="border border-secondary rounded-circle object-fit-none"
               src={profilePicUrl}
               alt="profilepicture"
               width={imgSize}
@@ -60,7 +60,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                 role="button"
                 aria-label="Resume/CV"
               >
-                Resume
+                Currículo
               </a>
             </p>
           )}

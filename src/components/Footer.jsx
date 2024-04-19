@@ -8,7 +8,7 @@ const Footer = (props) => {
     <footer style={bgStyle} className="mt-auto py-5 text-center ">
       <Container>
         {props.children}
-        <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
+        <i className="fas fa-code" /> com <i className="fas fa-heart" /> por{" "}
         <a
           rel="noopener"
           href="https://github.com/hashirshoaeb"
@@ -18,6 +18,15 @@ const Footer = (props) => {
           </span>
         </a>{" "}
         using <i className="fab fa-react" />
+          {" "} e modificado conforme necessidade por {" "} 
+          <a
+          rel="noopener"
+          href="https://github.com/Stefano Augusto"
+          aria-label="My GitHub"
+        > <span className="badge bg-dark">
+            Stefano Augusto Mossi
+          </span>
+        </a>{" "}
         <p>
           <small className="text-muted">
             Project code is open source. Feel free to fork and make your own

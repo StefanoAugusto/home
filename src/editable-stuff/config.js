@@ -6,30 +6,26 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
-  middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  firstName: "Stefano",
+  middleName: "Augusto",
+  lastName: "Mossi",
+  message: "Buscando melhorar o mundo por meio da tecnologia e da análise de dados",
   icons: [
     {
-      image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
+      image: "fab fa-github",
+      url: "https://github.com/StefanoAugusto",
     },
     {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
+      image: "fas fa-envelope",
+      url: "mailto:stefanoaugustomossi@gmail.com",
     },
     {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      image: "fab fa-whatsapp",
+      url: "https://wa.me/5554996171701",
     },
     {
-      image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      image: "fab fa-linkedin",
+      url: "https://www.linkedin.com/in/StefanoMossi/",
     },
   ],
 };
@@ -50,12 +46,12 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  heading: "Sobre mim",
+  imageLink: require("../editable-stuff/perfil.png"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "Olá! Sou o Stefano, tenho 24 anos de idade, possuo formação em Direito e atualmente estou aprimorando minhas habilidades em Ciências da Computação na Atitus. Atuo como Desenvolvedor de Sistemas Júnior, concentrando-me principalmente em banco de dados, com uma forte expertise em Oracle. Além disso, tenho uma sólida experiência em projetos internos e acadêmicos envolvendo Python e suas bibliotecas, como Pandas, NumPy e PyCryptoDome, além da linguagem R.",
+  resume: "https://drive.google.com/file/d/1hmVacVL6QiZQ9hSnkEgsKkO18ZBmsIMQ/view?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -65,8 +61,8 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
+  heading: "Projetos Acadêmicos Recentes",
+  gitHubUsername: "StefanoAugusto", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
 };
@@ -79,12 +75,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/perfil.png"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/perfil.png"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -98,51 +94,53 @@ const leadership = {
 // SKILLS SECTION
 const skills = {
   show: true,
-  heading: "Skills",
+  heading: "Habilidades",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "Python", value: 80 },
+    { name: "Pandas", value: 75 },
+    { name: "SQL", value: 90 },
+    { name: "Estrutura de Dados", value: 85 },
+    { name: "Linguagem R", value: 55 },
+    { name: "JavaScript", value: 60 },
+    { name: "React", value: 55 },
+    { name: "HTML/CSS", value: 70 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: "Orientação a resultados", value: 75 },
+    { name: "Colaboração", value: 90 },
+    { name: "Positividade", value: 80 },
+    { name: "Adaptabilidade", value: 85 },
+    { name: "Resolução de Problemas", value: 80 },
+    { name: "Empatia", value: 90 },
+    { name: "Organização", value: 85 },
+    { name: "Criatividade", value: 70 },
   ],
 };
 
 // GET IN TOUCH SECTION
 const getInTouch = {
   show: true,
-  heading: "Get In Touch",
+  heading: "Entre em contato!",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "Atualmente estou procurando oportunidades como Engenheiro de Software ou como Cientista de Dados! Se você conhece alguma oportunidade, caso tenha alguma dúvida, ou caso queira apenas dizer oi, sinta-se livre para entrar em contato!",
+  email: "stefanoaugustomossi@gmail.com",
 };
 
 const experiences = {
-  show: false,
-  heading: "Experiences",
+  show: true,
+  heading: "Experiências",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Desenvolvedor Back-End Júnior',
+      companylogo: require('../assets/img/dataintegra.png'),
+      date: 'Junho 2022 – Atualmente',
+      exp: 'Forte atuação no suporte a integrações de bancos de dados Oracle (PL/SQL) e também elaboração de rotinas com procedures, triggers, jobs e packages. Além de também prestar atendimento aos clientes de diversos locais como: Panamá, Peru, Uruguai e entre outros países, também atuando com a descrição do atendimento via Jira.'
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Assistente Júridico',
+      companylogo: require('../assets/img/hiorder.png'),
+      date: 'Junho 2020 – Dezembro 2022',
+      exp: 'Desenvolvimento de atividades relacionadas ao programa de compliance à Lei Geral de Proteção de Dados, suporte nas tarefas de diagnóstico e adequação dos clientes à LGPD, em especial nas estruturas de websites, aplicativos e plataformas web-base.'
     },
   ]
 }
