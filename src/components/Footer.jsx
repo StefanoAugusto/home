@@ -17,11 +17,11 @@ const Footer = (props) => {
             Hashir Shoaib
           </span>
         </a>{" "}
-        using <i className="fab fa-react" />
+        usando <i className="fab fa-react" />
           {" "} e modificado conforme necessidade por {" "} 
           <a
           rel="noopener"
-          href="https://github.com/Stefano Augusto"
+          href="https://github.com/StefanoAugusto"
           aria-label="My GitHub"
         > <span className="badge bg-dark">
             Stefano Augusto Mossi
