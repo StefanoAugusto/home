@@ -139,7 +139,7 @@ const experiences = {
     {
       role: 'Assistente Júridico',
       companylogo: require('../assets/img/hiorder.png'),
-      date: 'Junho 2020 – Dezembro 2022',
+      date: 'Junho 2021 – Dezembro 2022',
       exp: 'Desenvolvimento de atividades relacionadas ao programa de compliance à Lei Geral de Proteção de Dados, suporte nas tarefas de diagnóstico e adequação dos clientes à LGPD, em especial nas estruturas de websites, aplicativos e plataformas web-base.'
     },
   ]
