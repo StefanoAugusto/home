@@ -131,9 +131,15 @@ const experiences = {
   heading: "Experiências",
   data: [
     {
+      role: 'Desenvolvedor Back-End Pleno',
+      companylogo: require('../assets/img/mercadados2.png'),
+      date: 'Maio 2024 – Atualmente',
+      exp: 'Desenvolvimento e atuação em banco de dados SQL Server, ETL (Extract, Transform and Load) de dados, criação de dashboards para análise de dados.'
+    },
+    {
       role: 'Desenvolvedor Back-End Júnior',
-      companylogo: require('../assets/img/dataintegra.png'),
-      date: 'Junho 2022 – Atualmente',
+      companylogo: require('../assets/img/dataintegra2.png'),
+      date: 'Junho 2022 – Maio 2024',
       exp: 'Forte atuação no suporte a integrações de bancos de dados Oracle (PL/SQL) e também elaboração de rotinas com procedures, triggers, jobs e packages. Além de também prestar atendimento aos clientes de diversos locais como: Panamá, Peru, Uruguai e entre outros países, também atuando com a descrição do atendimento via Jira.'
     },
     {
