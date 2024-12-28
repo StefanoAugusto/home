@@ -50,8 +50,8 @@ const about = {
   imageLink: require("../editable-stuff/perfil.png"),
   imageSize: 375,
   message:
-    "Olá! Sou o Stefano, tenho 24 anos de idade, possuo formação em Direito e atualmente estou aprimorando minhas habilidades em Ciências da Computação na Atitus. Atuo como Desenvolvedor de Sistemas Júnior, concentrando-me principalmente em banco de dados, com uma forte expertise em Oracle. Além disso, tenho uma sólida experiência em projetos internos e acadêmicos envolvendo Python e suas bibliotecas, como Pandas, NumPy e PyCryptoDome, além da linguagem R.",
-  resume: "https://drive.google.com/file/d/1hmVacVL6QiZQ9hSnkEgsKkO18ZBmsIMQ/view?usp=sharing",
+    "Olá! Sou o Stefano, tenho 25 anos de idade, possuo formação em Direito e atualmente estou aprimorando minhas habilidades em Ciências da Computação na Atitus. Atuo como Programador SQL Pleno, atuando principalmente em análise de dados, com uma forte expertise em Oracle. Além disso, tenho uma sólida experiência em projetos internos e acadêmicos envolvendo Python e suas bibliotecas, como Pandas, NumPy e PyCryptoDome, além da linguagem R.",
+  resume: "https://drive.google.com/file/d/1QOk0Hm8dXhOoZKqEC40Sk7de5TaKBsdZ/view?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -98,12 +98,12 @@ const skills = {
   hardSkills: [
     { name: "Python", value: 80 },
     { name: "Pandas", value: 75 },
-    { name: "SQL", value: 90 },
-    { name: "Estrutura de Dados", value: 85 },
-    { name: "Linguagem R", value: 55 },
-    { name: "JavaScript", value: 60 },
-    { name: "React", value: 55 },
-    { name: "HTML/CSS", value: 70 },
+    { name: "SQL", value: 95 },
+    { name: "Estrutura de Dados", value: 90 },
+    { name: "Linguagem R", value: 60 },
+    { name: "JavaScript", value: 70 },
+    { name: "React", value: 70 },
+    { name: "HTML/CSS", value: 80 },
   ],
   softSkills: [
     { name: "Orientação a resultados", value: 75 },
@@ -122,7 +122,7 @@ const getInTouch = {
   show: true,
   heading: "Entre em contato!",
   message:
-    "Atualmente estou procurando oportunidades como Engenheiro de Software ou como Cientista de Dados! Se você conhece alguma oportunidade, caso tenha alguma dúvida, ou caso queira apenas dizer oi, sinta-se livre para entrar em contato!",
+    "Atualmente estou procurando oportunidades  como Cientista de Dados! Se você conhece alguma oportunidade, caso tenha alguma dúvida, ou caso queira apenas dizer oi, sinta-se livre para entrar em contato!",
   email: "stefanoaugustomossi@gmail.com",
 };
 
@@ -131,10 +131,10 @@ const experiences = {
   heading: "Experiências",
   data: [
     {
-      role: 'Desenvolvedor Back-End Pleno',
+      role: 'Desenvolvedor SQL Pleno',
       companylogo: require('../assets/img/mercadados2.png'),
       date: 'Maio 2024 – Atualmente',
-      exp: 'Desenvolvimento e atuação em banco de dados SQL Server, ETL (Extract, Transform and Load) de dados, criação de dashboards para análise de dados.'
+      exp: 'Estruturação de regras de negócio e processamento de dados da aplicação Mercadados. Aplicação de ETL na base de dados, buscando realizar a criação de views e análises de dados relevantes para o Cliente. Reestruturação de aplicação em Python para o Low-code da plataforma. Desenvolvimento em T-SQL. Aplicação da metodologia SCRUM no dia-a-dia.'
     },
     {
       role: 'Desenvolvedor Back-End Júnior',
