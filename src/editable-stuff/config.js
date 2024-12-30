@@ -51,7 +51,7 @@ const about = {
   imageSize: 375,
   message:
     "Olá! Sou o Stefano, tenho 25 anos de idade, possuo formação em Direito e atualmente estou aprimorando minhas habilidades em Ciências da Computação na Atitus. Atuo como Programador SQL Pleno, atuando principalmente em análise de dados, com uma forte expertise em Oracle. Além disso, tenho uma sólida experiência em projetos internos e acadêmicos envolvendo Python e suas bibliotecas, como Pandas, NumPy e PyCryptoDome, além da linguagem R.",
-  resume: "https://drive.google.com/file/d/1QOk0Hm8dXhOoZKqEC40Sk7de5TaKBsdZ/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/113yAbhzQ5cnVcCOJRUUwpalIPq8sSz9Q/view?usp=sharing",
 };
 
 // PROJECTS SECTION
