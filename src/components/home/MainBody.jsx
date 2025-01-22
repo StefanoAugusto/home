@@ -2,9 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Typist from 'react-typist-component';
 import { Jumbotron } from "./migration";
+import { useLanguage } from "../Navbar";
+import { mainBody } from "../../editable-stuff/config"; 
 
 const MainBody = React.forwardRef(
-  ({ gradient, title, message, icons }, ref) => {
+  ({ gradient, title, icons }, ref) => {
+    const { language } = useLanguage();
+
+
     return (
       <Jumbotron
         fluid
@@ -20,9 +25,9 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist>
+          <Typist key={language}>
             <div className="lead typist">
-              {message}
+              {mainBody[language].message}
             </div>
           </Typist>
           <div className="p-5">
@@ -44,7 +49,7 @@ const MainBody = React.forwardRef(
             role="button"
             aria-label="Saiba mais sobre mim"
           >
-            Mais sobre mim
+            {language === "EN" ? "More about me" : "Mais sobre mim"}
           </a>
         </Container>
       </Jumbotron>

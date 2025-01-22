@@ -11,22 +11,12 @@ const Footer = (props) => {
         <i className="fas fa-code" /> com <i className="fas fa-heart" /> por{" "}
         <a
           rel="noopener"
-          href="https://github.com/hashirshoaeb"
-          aria-label="My GitHub"
-        > <span className="badge bg-dark">
-            Hashir Shoaib
-          </span>
-        </a>{" "}
-        usando <i className="fab fa-react" />
-          {" "} e modificado conforme necessidade por {" "} 
-          <a
-          rel="noopener"
           href="https://github.com/StefanoAugusto"
           aria-label="My GitHub"
         > <span className="badge bg-dark">
             Stefano Augusto Mossi
           </span>
-        </a>{" "}
+        </a>
         <p>
           <small className="text-muted">
             Project code is open source. Feel free to fork and make your own

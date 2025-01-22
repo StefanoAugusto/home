@@ -16,14 +16,15 @@ import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/Skills";
+import { LanguageProvider } from "./components/Navbar";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-
 import Experience from "./components/home/Experience";
 
 const Home = React.forwardRef((props, ref) => {
+
   return (
     <>
       <MainBody
@@ -42,11 +43,7 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      }
+      {experiences.show && <Experience experiences={experiences} />}
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -70,32 +67,32 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-      
     </>
   );
 });
+
 
 const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
-      {navBar.show && <Navbar ref={titleRef} />}
-      <Routes>
-        <Route path="/" exact element={<Home ref={titleRef} />} />
-      </Routes>
-      {/* {false && <Route path="/blog" exact component={Blog} />}
-      {false && <Route path="/blog/:id" component={BlogPost} />} */}
-      <Footer>
-        {getInTouch.show && (
-          <GetInTouch
-            heading={getInTouch.heading}
-            message={getInTouch.message}
-            email={getInTouch.email}
-          />
-        )}
-      </Footer>
-    </BrowserRouter>
+    <LanguageProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
+        {navBar.show && <Navbar ref={titleRef} />}
+        <Routes>
+          <Route path="/" element={<Home ref={titleRef} />} />
+        </Routes>
+        <Footer>
+          {getInTouch.show && (
+            <GetInTouch
+              heading={getInTouch.heading}
+              message={getInTouch.message}
+              email={getInTouch.email}
+            />
+          )}
+        </Footer>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 };
 

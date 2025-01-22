@@ -2,6 +2,8 @@ import React from "react";
 
 import axios from "axios";
 import { Jumbotron } from "./migration";
+import { useLanguage } from "../Navbar";
+import { about } from "../../editable-stuff/config"; 
 
 const pictureLinkRegex = new RegExp(
   /[(http(s)?):(www.)?a-zA-Z0-9@:%._+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/
@@ -10,6 +12,8 @@ const pictureLinkRegex = new RegExp(
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
   const [showPic, setShowPic] = React.useState(Boolean(link));
+  const { language } = useLanguage();
+
   // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
   React.useEffect(() => {
     const handleRequest = async () => {
@@ -48,19 +52,19 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
           )}
         </div>
         <div className={`col-lg-${showPic ? "7" : "12"}`}>
-          <h2 className="display-4 mb-5 text-center">{heading}</h2>
-          <p className="lead text-center">{message}</p>
-          {resume && (
+          <h2 className="display-4 mb-5 text-center">{about[language].heading}</h2>
+          <p className="lead text-center">{about[language].message}</p>
+          {about[language].resume && (
             <p className="lead text-center">
               <a
                 className="btn btn-outline-dark btn-lg"
-                href={resume}
+                href={about[language].resume}
                 target="_blank"
                 rel="noreferrer noopener"
                 role="button"
                 aria-label="Resume/CV"
               >
-                Currículo
+                 {language === "EN" ? "Resume" : "Currículo"}
               </a>
             </p>
           )}

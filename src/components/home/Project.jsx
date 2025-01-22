@@ -4,6 +4,8 @@ import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
+import { useLanguage } from "../Navbar";
+import { repos } from "../../editable-stuff/config"; 
 
 const dummyProject = {
   name: null,
@@ -23,6 +25,7 @@ const Project = ({ heading, username, length, specfic }) => {
   const dummyProjectsArr = new Array(length + specfic.length).fill(
     dummyProject
   );
+  const { language } = useLanguage();
 
   const [projectsArray, setProjectsArray] = useState([]);
 
@@ -57,7 +60,7 @@ const Project = ({ heading, username, length, specfic }) => {
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
-        <h2 className="display-4 pb-5 text-center">{heading}</h2>
+        <h2 className="display-4 pb-5 text-center">{repos[language].heading}</h2>
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
